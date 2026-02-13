@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ellie ❤️ Liya</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            text-align: center;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        h1 {
+            margin-top: 100px;
+            font-size: 40px;
+            color: white;
+        }
+
+        p {
+            font-size: 20px;
+            color: white;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            font-size: 20px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            margin: 20px;
+        }
+
+        #yes {
+            background-color: #ff4d6d;
+            color: white;
+        }
+
+        #no {
+            background-color: white;
+            color: #ff4d6d;
+            position: absolute;
+        }
+
+        img {
+            width: 200px;
+            border-radius: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Ellie ❤️ Liya</h1>
+<p>Our Anniversary: 20 March 💖</p>
+
+<img src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif">
+
+<h2 style="color:white;">Liya, will you stay with me forever? 🥺</h2>
+
+<button class="btn" id="yes" onclick="yesClicked()">Yes 💕</button>
+<button class="btn" id="no" onmouseover="moveButton()">No 😜</button>
+
+<script>
+function moveButton() {
+    var button = document.getElementById("no");
+    button.style.top = Math.random() * window.innerHeight + "px";
+    button.style.left = Math.random() * window.innerWidth + "px";
+}
+
+function yesClicked() {
+    document.body.innerHTML = `
+        <h1 style="color:white; margin-top:150px;">
+        YAYYYY 💖💖💖  
+        I LOVE YOU LIYA 😭💕  
+        Forever starts 20 March 💍
+        </h1>
+        <img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif">
+    `;
+}
+</script>
+
+</body>
+</html>
